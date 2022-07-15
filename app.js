@@ -1,21 +1,32 @@
 'use strict';
  let siteVisitor = prompt('What is your name?');
- alert('Welcome ' + siteVisitor)! Think about the temperature where you are;
+ alert('Welcome '+ siteVisitor + " think about how old you are");
 
  // LETTSSS GOOOO
 
- let score = 0;
+let ageOf = prompt('How old are you?');
+let age = Number(ageOf);
+if (age < 120) {
+  alert('You are old enough to make art');
+if (age > 21) {
+//  alert('You are old enough to drink and make art');
+}
+  score++;
+}
+if(age > 120) {
+  alert('You can still make art');
 
- function temperature() {
-   let temperature = prompt('What is the temperature outside?');
-   if (temperature > 70) {
-     alert('It is too hot outside.');
-     //console.log('It is too hot outside.');
-   } else if (temperature < 70) {
-     alert('It is too cold outside.');
-     //console.log('It is too cold outside.');
-   } else {
-     alert('It is just right outside.');
-     //console.log('It is just right outside.');
-   }
- }
+let favoriteColor = prompt('Do you have a favorite colour (yes/no)(y/n)?');
+let color = favoriteColor.toLowerCase();
+if (favoriteColor === 'yes' || favoriteColor === 'y') {
+  //console.log('You have a favorite colour');
+  alert('You have a favorite colour');
+  score++;
+if (favoriteColor === 'no' || favoriteColor === 'n') {
+  alert('You do not have a favorite colour');
+  //console.log('You do not have a favorite colour')
+}
+} else {
+  alert('You do not have a favorite colour');
+}
+}
